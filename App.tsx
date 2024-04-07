@@ -5,13 +5,23 @@
  * @format
  */
 
+import Home from "@src/screen/home/Screen";
 import React from "react";
-import {Text, View} from "react-native";
+import {SafeAreaView, ScrollView, Text} from "react-native";
 
 export default function App() {
+    
     return (
-        <View className="bg-red-500">
-            <Text>App</Text>
-        </View>
+        <SafeAreaView>
+            <ScrollView 
+                contentInsetAdjustmentBehavior="automatic"
+                className="h-full "
+                >
+                <Home />
+                <Home />
+                <Home />
+                <Home />
+            </ScrollView>
+        </SafeAreaView>
     );
 }
