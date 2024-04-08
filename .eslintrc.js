@@ -4,5 +4,6 @@ module.exports = {
     rules: {
         quotes: ["warn", "double"],
         semi: ["warn", "always"],
+        EndOfLine: "auto",
     },
 };
