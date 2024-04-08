@@ -6,7 +6,7 @@
  */
 
 import React from "react";
-import {Image, SafeAreaView, ScrollView, Text, View} from "react-native";
+import { Image, SafeAreaView, ScrollView, Text, View } from "react-native";
 
 type CardProps = {
     bg: string;
@@ -14,7 +14,7 @@ type CardProps = {
 };
 
 function Card(props: CardProps) {
-    const {bg, children} = props;
+    const { bg, children } = props;
     return (
         <View className={`items-center justify-center w-32 h-32 rounded-md m-2 ${bg}`}>
             <Text className="text-white">{children}</Text>
@@ -27,7 +27,11 @@ export default function App() {
         <SafeAreaView>
             <ScrollView contentInsetAdjustmentBehavior="automatic">
                 <Text className="text-3xl">FlatCard</Text>
-                <ScrollView horizontal={true} contentInsetAdjustmentBehavior="automatic" className="bg-neutral-700 ">
+                <ScrollView
+                        horizontal={true}
+                        contentInsetAdjustmentBehavior="automatic"
+                        className="bg-neutral-700 "
+                    >
                     <Card bg="bg-red-600">Text</Card>
                     <Card bg="bg-blue-600">Text</Card>
                     <Card bg="bg-green-600">Text</Card>
